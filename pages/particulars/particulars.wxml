@@ -1,0 +1,38 @@
+<swiper class='onSwipet' indicator-dots="{{shop.images.length>1}}" autoplay="{{true}}" interval="{{interval}}" duration="{{1000}}"
+  indicator-active-color='#fff' interval='5000' circular='true'
+  >
+		<swiper-item class='swiperItem'  wx:for="{{shop.images}}" wx:key="id" >
+      <image src='{{item}}' class='slide-image' bindtap="previewHandle" data-src="{{item}}"></image>
+		</swiper-item>
+</swiper>
+<view class='lwq-shangpu' wx:if='{{shop.name}}'>
+    <text class="lwq-name">{{shop.name}}</text>
+    <text class="lwq-phone">电话：{{shop.phone || 'none'}}</text>
+    <text class="lwq-address">地址：{{shop.address}}</text>
+    <text class="lwq-hours">营业时间：{{shop.businessHours}}</text>
+</view>
+
+<view  wx:if='{{shop.introduction}}'>
+  <text>{{shop.introduction}}</text>
+</view>
+
+<view class='lwq-comments' wx:if='{{shop.comments.length}}'>
+  <view class="lwq-item" wx:for='{{shop.comments}}' wx:key='*this'>
+    <text>{{item.name}}</text>
+    <text class='lwq-rating'>{{item.rating}}</text>
+    <text class='lwq-date'>{{item.date}}</text>
+    <text class='lwq-content'>{{item.content}}</text>
+    <view>
+      <image class="lwq-image" wx:for='{{item.images}}' wx:key='this' src="{{utils.size(item)}}"></image>
+    </view>
+  </view>
+</view>
+
+<wxs module='utils'>
+  module.exports={
+    size:function(input){
+      return input.replace('w.h','100.100')
+    }
+  }
+</wxs>
+

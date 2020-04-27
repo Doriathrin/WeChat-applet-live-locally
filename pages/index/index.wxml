@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<swiper class='onSwipet' indicator-dots="{{true}}" autoplay="{{true}}" interval="{{interval}}" duration="{{1000}}"
+  indicator-active-color='#fff' interval='5000' circular='true'
+  >
+		<swiper-item class='swiperItem'  wx:for="{{slides}}" wx:key="{{index}}" 
+     data-value='{{item}}' catchtap='readDetail'>
+     <navigator wx:if='{{item.link}}' url="{{item.link}}">
+      <image src='{{item.image}}' class='slide-image'></image>
+     </navigator>
+     <image src='{{item.image}}' class='slide-image'></image>
+		</swiper-item>
+</swiper>
+<view class="lwq-nav">
+  <navigator wx:for='{{categories}}' wx:key='id' class='lwq-nrong' 
+    url="/pages/list/list?cat={{item.id}}"
+  >
+    <image src="{{item.icon}}"></image>
+    <text>{{item.name}}</text>
+  </navigator>
+</view>
