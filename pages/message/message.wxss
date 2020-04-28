@@ -1,1 +1,31 @@
-/* pages/message/message.wxss */
+image{
+  width:100%;
+  height:300rpx;
+}
+.lwq-box{
+  width:100%;
+  min-height: 100vh;
+  background: #D4D4D4;
+  display: flex;
+  flex-direction: column;
+  padding: 60rpx 38rpx;
+}
+.lwq-nrong{
+  width:90%;
+  height:600rpx;
+  background: white;
+  border-radius: 10rpx;
+  margin-bottom: 60rpx;
+  padding: 20rpx 30rpx;
+  box-sizing: border-box;
+  border:1rpx solid #ddd
+}
+
+.lwq-title{
+  font-weight: bold;
+}
+
+.lwq-data{
+  font-size: 25rpx;
+  color:#C0C0C0;
+}

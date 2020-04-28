@@ -2,7 +2,7 @@
 <swiper class='onSwipet' indicator-dots="{{true}}" autoplay="{{true}}" interval="{{interval}}" duration="{{1000}}"
   indicator-active-color='#fff' interval='5000' circular='true'
   >
-		<swiper-item class='swiperItem'  wx:for="{{slides}}" wx:key="{{index}}" 
+		<swiper-item class='swiperItem'  wx:for="{{slides}}" wx:key="id" 
      data-value='{{item}}' catchtap='readDetail'>
      <navigator wx:if='{{item.link}}' url="{{item.link}}">
       <image src='{{item.image}}' class='slide-image'></image>

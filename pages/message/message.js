@@ -5,21 +5,39 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    profile:[],
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    const profile=this.data.profile
+    for(var i =0; i<16; i++){
+      profile.push({
+        title:'五一小长假，快到了！！！',
+        data:i+'May',
+        image:'https://unsplash.it/600/400?random',
+        summary:'我最喜欢的是javascript,最爱的是敲代码'
+      })
+    }
+    this.setData({
+      profile:profile
+    })
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    const query=wx.createSelectorQuery();
+    query.select('.lwq-box').boundingClientRect()
+    query.exec((res)=>{
+      console.log(res);
+      wx.pageScrollTo({
+        scrollTop:res[0].bottom
+      })
+    })
   },
 
   /**

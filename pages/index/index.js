@@ -24,6 +24,9 @@ Page({
       this.setData({
         categories:res.data
       })
+      wx.setNavigationBarTitle({
+        title: '本地生活',
+      })
     })
   },
   getUserInfo: function(e) {
