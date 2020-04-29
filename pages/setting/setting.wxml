@@ -1,0 +1,15 @@
+<!--pages/setting/setting.wxml-->
+<view class="lwq-setting">
+    <navigator class="lwq-top">
+      <text>个人资料</text>
+      <switch checked="switch1Checked"></switch>
+    </navigator>
+    <navigator class="lwq-top">
+      <text>常见问题</text>
+      <switch type="checkbox" checked="switch2Checked" bindchange="switch2Checked"></switch>
+    </navigator>
+    <navigator class="lwq-top">
+      <text>使用条款</text>
+      <switch></switch>
+    </navigator>
+</view>

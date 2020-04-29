@@ -1,28 +1,39 @@
 /**index.wxss**/
+.swiperItem image{
+  width: 100%;
+}
 .lwq-nav{
-  width:100%;
-  height:700rpx;
   border-bottom:15rpx solid #eee;
   display: flex;
   flex-wrap: wrap;
-  
 }
 .lwq-nrong{
-  width:250rpx;
-  height:230rpx;
-  border-top: 1rpx solid#F1F1F1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width:33.3%;
+  height:244rpx;
+  border-top: 1rpx solid  #F1F1F1;
   border-left: 1rpx solid #F1F1F1;
 }
 .lwq-nrong>text{
-  display: block;
-  text-align: center;
   font-size: 25rpx;
-  margin-top: 30rpx;
+  margin-top: 20rpx;
 }
 .lwq-nrong>image{
   width:80rpx;
   height:80rpx;
-  display: block;
-  margin: auto;
-  margin-top: 50rpx;
 }  
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rpx 0;
+  padding: 30rpx;
+  background-color: #fff;
+}
+.links image {
+  width: 330rpx;
+  height: 185rpx;
+}

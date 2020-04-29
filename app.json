@@ -4,7 +4,8 @@
     "pages/message/message",
     "pages/profile/profile",
     "pages/list/list",
-    "pages/particulars/particulars"
+    "pages/particulars/particulars",
+    "pages/setting/setting"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -1,0 +1,13 @@
+.lwq-setting{
+  min-height: 100vh;
+  background: #ddd;
+}
+.lwq-top{
+  width: 100%;
+  height:100rpx;
+  background: white;
+  display: flex;
+  padding: 20rpx 30rpx;
+  align-items: center;
+  box-sizing: border-box;
+}

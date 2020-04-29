@@ -18,3 +18,11 @@
     <text>{{item.name}}</text>
   </navigator>
 </view>
+<view class="links">
+  <navigator url="/pages/list/list?type=recommend">
+    <image src="/tabs/link-01.png"/>
+  </navigator>
+  <navigator url="/pages/forum/forum">
+    <image src="/tabs/link-02.png"/>
+  </navigator>
+</view>

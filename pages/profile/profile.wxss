@@ -1,0 +1,24 @@
+image{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+  box-shadow: 0 0 0 5rpx #DADADA;
+}
+.lwq-top{
+  height: 400rpx;
+  border-bottom: 12rpx solid #DADADA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.lwq-item{
+  height: 100rpx;
+  line-height: 100rpx;
+  border-bottom: 1rpx solid #DADADA;
+  padding: 0rpx 20rpx;
+  box-sizing: border-box;
+}
+.lwq-der{
+  border-bottom: 10rpx solid#DADADA;
+}

@@ -1,0 +1,19 @@
+<view class="lwq-top">
+  <button wx:if='{{userInfo===null}}' type="primary" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+    微信登录
+  </button>
+  <image wx:else src="{{userInfo.avatarUrl}}"></image>
+</view>
+<view class='lwq-cells'>
+  <navigator class="lwq-item">
+    个人资料:<text>姓名:{{userInfo.nickName}}</text>
+  </navigator>
+  <navigator class="lwq-item">我的优惠劵</navigator>
+  <view class="lwq-der"></view>
+  <navigator class="lwq-item">常见问题</navigator>
+  <navigator class="lwq-item">使用条款</navigator>
+  <navigator class="lwq-item">隐私权政策</navigator>
+  <navigator class="lwq-item">联系客服</navigator>
+  <view class="lwq-der"></view>
+  <navigator class="lwq-item" url="/pages/setting/setting">设置</navigator>
+</view>
